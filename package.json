@@ -1,0 +1,21 @@
+{
+  "name": "wetube",
+  "version": "1.0.0",
+  "description": "The best way to watch videos.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/View-Studio/wetube-reloaded.git"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Kyungmin Kim <ViewStudio>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/View-Studio/wetube-reloaded/issues"
+  },
+  "homepage": "https://github.com/View-Studio/wetube-reloaded#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
