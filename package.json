@@ -7,7 +7,7 @@
     "url": "git+https://github.com/View-Studio/wetube-reloaded.git"
   },
   "scripts": {
-    "start": "node index.js"
+    "dev": "nodemon --exec npx babel-node index.js"
   },
   "author": "Kyungmin Kim <ViewStudio>",
   "license": "MIT",
@@ -17,5 +17,11 @@
   "homepage": "https://github.com/View-Studio/wetube-reloaded#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "nodemon": "^2.0.15"
   }
 }

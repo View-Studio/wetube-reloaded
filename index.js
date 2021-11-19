@@ -1,1 +1,6 @@
-console.log("Hello NodeJS");
+function init() {
+    const name = "Kyungmin";
+    console.log(`Hi! ${name}`);
+}
+
+init();
