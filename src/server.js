@@ -1,6 +1,7 @@
 import express from "express";
 
 const PORT = 4000;
+const AUTHORITY = true;
 
 const app = express();
 
@@ -13,11 +14,15 @@ const logger = function(req, res, next) {
 
 const privateMiddleware = function(req, res, next) {
     const url = req.url;
-    if (url === "/protected") {
+    if (url === "/protected" && AUTHORITY === false) {
         return res.send("Not Allowed!");
+    } else if (url === "/protected" && AUTHORITY === true) {
+        console.log("You allowed private page.");
+        next();
+    } else {
+        console.log(`You allowed ${url} page`);
+        next();
     }
-    console.log("You allowed this page.");
-    next();
 };
 
 const handleHome = function(req, res) {
