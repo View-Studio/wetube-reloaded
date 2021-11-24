@@ -5,6 +5,10 @@ const AUTHORITY = true;
 
 const app = express();
 
+const accountConfirm = function() {
+    
+}
+
 
 
 const logger = function(req, res, next) {
